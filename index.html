@@ -26,6 +26,12 @@ Classification</h1>
             <a href="assets/poster.pdf" class="button" target="_blank">Poster</a>
         </div>
 
+        <div id="abstractBox" class="abstract-box">
+            <strong>Abstract:</strong><br />
+            Large-scale multi-modal training with image-text pairs imparts strong generalization to CLIP model. Since training on a similar scale for videos is infeasible, recent approaches focus on the effective transfer of image-based CLIP to the video domain. In this pursuit, new parametric modules are added to learn temporal information and inter-frame relationships which require meticulous design efforts. Furthermore, when the resulting models are learned on videos, they tend to overfit on the given task distribution and lack in generalization aspect...
+        </div>
+
+
         <div class="video">
             <iframe width="800" height="450" 
                 src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" 
@@ -36,5 +42,14 @@ Classification</h1>
             </iframe>
         </div>
     </div>
+
+<script>
+  function toggleAbstract() {
+    const abstractBox = document.getElementById("abstractBox");
+    abstractBox.style.display = abstractBox.style.display === "none" || abstractBox.style.display === "" ? "block" : "none";
+  }
+</script>
+    
+    
 </body>
 </html>
